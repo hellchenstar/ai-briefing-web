@@ -2,11 +2,12 @@
   <div class="page-shell">
     <header class="hero">
       <div>
-        <p class="eyebrow">AI Briefing</p>
+        <p class="eyebrow">Signal Hub</p>
         <h1>{{ briefingMeta.siteTitle }}</h1>
         <p class="hero-text">{{ briefingMeta.intro }}</p>
       </div>
       <div class="hero-panel">
+        <img class="brand-logo" src="/brand-logo.svg" alt="Signal Hub" />
         <p>发布规则</p>
         <ul>
           <li>{{ briefingMeta.publishRule }}</li>
