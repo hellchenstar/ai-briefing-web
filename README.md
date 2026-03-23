@@ -29,3 +29,5 @@ npm run build
 建议仓库名使用：`ai-briefing-web`
 
 默认发布地址将是：`https://hellchenstar.github.io/ai-briefing-web/`
+
+内容文件位于：`src/data/briefing.js`
