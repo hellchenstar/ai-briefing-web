@@ -315,4 +315,47 @@ export const dailyIssue = {
   ]
 }
 
-export const urgentUpdates = []
+export const urgentUpdates = [
+  {
+    id: 'hot-2026-03-24-01',
+    publishedAt: '2026-03-24 10:20',
+    title: 'Google AI Studio 把 vibe coding 往全栈应用搭建推进',
+    summary: 'Google 今天的焦点还是 AI Studio 能力扩展，方向很明确：从模型调用继续往页面生成、原型开发和完整应用工作流整合。',
+    impact: '开发者工具竞争继续卷“从想法到成品”的一站式体验。'
+  },
+  {
+    id: 'hot-2026-03-24-02',
+    publishedAt: '2026-03-24 10:20',
+    title: 'Cisco 与 Palo Alto 同时押注 Agent 安全赛道',
+    summary: 'Cisco 推 Agent 红队测试，Palo Alto 同步发安全浏览器与 Prisma AIRS 3.0，说明企业 AI 安全已经从概念讨论走向产品对位。',
+    impact: 'Agent 真正大规模进企业前，安全大概率先成为独立采购项。'
+  },
+  {
+    id: 'hot-2026-03-24-03',
+    publishedAt: '2026-03-24 10:20',
+    title: 'NVIDIA 把 AI 基建叙事继续延伸到工业、机器人和电力侧',
+    summary: '一边推进 IGX Thor 面向工业与医疗边缘场景，一边推动更“弹性”的 AI 数据中心，热点已经不只是芯片本身，而是整套行业基础设施。',
+    impact: '算力竞争正在从 GPU 参数战，扩展到能源、调度和垂直行业落地。'
+  },
+  {
+    id: 'hot-2026-03-24-04',
+    publishedAt: '2026-03-24 10:20',
+    title: '金融行业继续把 AI 推进到组织级和治理级',
+    summary: '汇丰任命首位 Chief AI Officer，摩根大通讨论下一代 Agent 安全，说明银行业对 AI 的关注点已经从试点工具转向长期治理和生产环境。',
+    impact: '金融 AI 下一阶段看的是组织能力、风控和责任边界。'
+  },
+  {
+    id: 'hot-2026-03-24-05',
+    publishedAt: '2026-03-24 10:20',
+    title: '医疗 AI 与推理基础设施仍是今天融资关注点',
+    summary: 'Doctronic 拿到 4000 万美元融资，Gimlet Labs 继续围绕推理瓶颈拿关注，资本依旧偏爱能直接落地和能降本的方向。',
+    impact: '比起再讲大模型故事，医疗场景和推理优化更容易拿到真实资金。'
+  },
+  {
+    id: 'hot-2026-03-24-06',
+    publishedAt: '2026-03-24 10:20',
+    title: '开源生态与产业链能力继续成为全球 AI 竞争焦点',
+    summary: '今天多条报道都在强调开源模型、制造能力与供应链协同的组合优势，讨论重心已经不只是闭源模型谁更强。',
+    impact: 'AI 竞争越来越像体系战，不再只是单点模型战。'
+  }
+]

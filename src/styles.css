@@ -21,10 +21,11 @@ h2 { font-size:1.8rem; }
 h3 { font-size:1.35rem; }
 .hero-text,.summary,.takeaway,.hero-panel li,.panel-text { color:#5a6774; line-height:1.7; }
 .hero-panel ul { margin:0; padding-left:18px; }
-.ghost-link,.tag-chip,.tag-list span,.issue-tags span,.level-badge { display:inline-flex; align-items:center; justify-content:center; padding:10px 14px; border-radius:999px; border:1px solid rgba(58,108,244,0.22); background:rgba(255,255,255,0.74); text-decoration:none; }
+.ghost-link,.tag-chip,.tag-list span,.issue-tags span,.level-badge,.urgent-count { display:inline-flex; align-items:center; justify-content:center; padding:10px 14px; border-radius:999px; border:1px solid rgba(58,108,244,0.22); background:rgba(255,255,255,0.74); text-decoration:none; }
 .issue-tags,.tag-list { display:flex; flex-wrap:wrap; gap:10px; }
-.panel-head { display:flex; align-items:center; justify-content:space-between; margin-bottom:12px; }
-.urgent-card + .urgent-card { margin-top:16px; padding-top:16px; border-top:1px solid rgba(23,33,43,0.08); }
+.panel-head { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:12px; }
+.urgent-list { display:grid; gap:14px; }
+.urgent-card { padding:18px 20px; border-radius:22px; background:linear-gradient(180deg, rgba(255,255,255,0.88), rgba(244,247,255,0.9)); border:1px solid rgba(23,33,43,0.08); }
 .toolbar { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:20px; padding:16px; }
 .tag-chip { cursor:pointer; }
 .tag-chip.active { background:rgba(58,108,244,0.12); border-color:rgba(58,108,244,0.4); font-weight:700; }

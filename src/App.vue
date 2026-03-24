@@ -31,18 +31,23 @@
 
     <section class="urgent-panel" v-if="urgentUpdates.length">
       <div class="panel-head">
-        <p class="eyebrow">Breaking</p>
-        <strong>突发更新</strong>
-      </div>
-      <article v-for="item in urgentUpdates" :key="item.id" class="urgent-card">
-        <div class="card-topline">
-          <span class="level-badge hot">实时</span>
-          <span class="time">{{ item.publishedAt }}</span>
+        <div>
+          <p class="eyebrow">Hot Topics</p>
+          <strong>热点资讯</strong>
         </div>
-        <h3>{{ item.title }}</h3>
-        <p class="summary">{{ item.summary }}</p>
-        <p class="takeaway">{{ item.impact }}</p>
-      </article>
+        <span class="urgent-count">{{ urgentUpdates.length }} 条</span>
+      </div>
+      <div class="urgent-list">
+        <article v-for="item in urgentUpdates" :key="item.id" class="urgent-card">
+          <div class="card-topline">
+            <span class="level-badge hot">热点</span>
+            <span class="time">{{ item.publishedAt }}</span>
+          </div>
+          <h3>{{ item.title }}</h3>
+          <p class="summary">{{ item.summary }}</p>
+          <p class="takeaway">{{ item.impact }}</p>
+        </article>
+      </div>
     </section>
 
     <section class="toolbar">
