@@ -62,22 +62,43 @@
       </button>
     </section>
 
-    <section class="content-grid">
-      <article v-for="item in filteredItems" :key="item.id" class="brief-card">
-        <div class="card-topline">
-          <span class="source">{{ item.source }}</span>
-          <div class="card-meta-right">
-            <span class="level-badge" :class="item.level === '重点' ? 'hot' : ''">{{ item.level }}</span>
-            <span class="time">{{ item.time }}</span>
+    <section class="content-layout">
+      <section class="content-grid">
+        <article v-for="item in filteredItems" :key="item.id" class="brief-card">
+          <div class="card-topline card-divider">
+            <span class="source">{{ item.source }}</span>
+            <div class="card-meta-right">
+              <span class="level-badge" :class="item.level === '重点' ? 'hot' : ''">{{ item.level }}</span>
+              <span class="time">{{ item.time }}</span>
+            </div>
           </div>
+          <h3 class="title-divider">{{ item.title }}</h3>
+          <p class="summary summary-compact content-divider">{{ item.summary }}</p>
+          <div class="tag-list tag-list-compact content-divider">
+            <span v-for="label in item.tags.slice(0, 3)" :key="label">{{ label }}</span>
+          </div>
+          <p class="takeaway takeaway-compact takeaway-divider">{{ item.takeaway }}</p>
+        </article>
+      </section>
+
+      <aside class="urgent-panel urgent-side" v-if="urgentUpdates.length">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Hot Topics</p>
+            <strong>热点资讯</strong>
+          </div>
+          <span class="urgent-count">{{ urgentUpdates.length }} 条</span>
         </div>
-        <h3>{{ item.title }}</h3>
-        <p class="summary">{{ item.summary }}</p>
-        <div class="tag-list">
-          <span v-for="label in item.tags" :key="label">{{ label }}</span>
+        <div class="urgent-simple-list">
+          <article v-for="item in urgentUpdates" :key="item.id" class="urgent-simple-item">
+            <div class="urgent-simple-top card-divider">
+              <span class="time">{{ item.publishedAt }}</span>
+            </div>
+            <h3 class="title-divider">{{ item.title }}</h3>
+            <p class="content-divider">{{ item.summary }}</p>
+          </article>
         </div>
-        <p class="takeaway">{{ item.takeaway }}</p>
-      </article>
+      </aside>
     </section>
   </div>
 </template>
