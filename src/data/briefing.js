@@ -317,6 +317,13 @@ export const dailyIssue = {
 
 export const urgentUpdates = [
   {
+    id: 'hot-2026-03-25-01',
+    publishedAt: '2026-03-25 03:15',
+    title: 'OpenAI Foundation 表示未来一年将投入至少 10 亿美元',
+    summary: 'OpenAI 官方更新称，其 Foundation 未来一年预计将在生命科学、就业与经济影响、AI 韧性和社区项目上投入至少 10 亿美元。',
+    impact: '这不是模型发布，但金额和方向都够重磅，说明 OpenAI 正把 AI 社会影响与长期资源配置拉到更高优先级。'
+  },
+  {
     id: 'hot-2026-03-24-01',
     publishedAt: '2026-03-24 10:20',
     title: 'Google AI Studio 把 vibe coding 往全栈应用搭建推进',
