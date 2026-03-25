@@ -317,6 +317,13 @@ export const dailyIssue = {
 
 export const urgentUpdates = [
   {
+    id: 'hot-2026-03-26-01',
+    publishedAt: '2026-03-26 00:00',
+    title: 'Google 发布 Lyria 3，并接入 Gemini API 与 AI Studio',
+    summary: 'Google 官方刚发布新一代音乐生成模型 Lyria 3，现已进入 Gemini API 付费预览，并可在 Google AI Studio 中测试。',
+    impact: '这属于 Google 的实打实新模型上线，说明其生成式媒体能力开始更明确地进入开发者平台和商用调用链路。'
+  },
+  {
     id: 'hot-2026-03-25-01',
     publishedAt: '2026-03-25 03:15',
     title: 'OpenAI Foundation 表示未来一年将投入至少 10 亿美元',
